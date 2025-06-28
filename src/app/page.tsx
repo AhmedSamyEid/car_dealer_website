@@ -1,4 +1,5 @@
 import FindYourPerfectCar from "./findYourPerfectCar/HeroSection";
+import { Statistics } from "./components/header/statistics/Statistics";
 import { BrandsSection } from "./components/header/brandsSection/BrandsSection";
 import { VehiclesSlider } from "./components/header/vehiclesslider/VehiclesSlider ";
 import { SellYourCarSection } from "./components/header/sellYourcarsection/SellYourCarSection";
@@ -9,6 +10,7 @@ export default function Home() {
       <BrandsSection />
       <VehiclesSlider />
       <SellYourCarSection />
+      <Statistics />
     </>
   );
 }
