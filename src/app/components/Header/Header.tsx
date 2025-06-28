@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { FaBars, FaXmark } from 'react-icons/fa6';
+import { useState } from "react";
+import Link from "next/link";
+import { FaBars, FaXmark } from "react-icons/fa6";
 
 interface NavItem {
   label: string;
@@ -54,10 +54,7 @@ const NavItemComponent: React.FC<{ item: NavItem }> = ({ item }) => {
   return (
     <li className="relative">
       {item.submenu ? (
-        <button
-          onClick={() => setDropdownOpen(!dropdownOpen)}
-          className="hover:text-yellow-300 transition cursor-pointer"
-        >
+        <button onClick={() => setDropdownOpen(!dropdownOpen)} className="hover:text-yellow-300 transition cursor-pointer">
           {item.label}
         </button>
       ) : (
@@ -78,17 +75,13 @@ const NavItemComponent: React.FC<{ item: NavItem }> = ({ item }) => {
   );
 };
 
-const MobileMenu: React.FC<{ navItems: NavItem[]; onClose: () => void }> = ({
-  navItems
-}) => (
+const MobileMenu: React.FC<{ navItems: NavItem[]; onClose: () => void }> = ({ navItems }) => (
   <div className="md:hidden absolute top-20 left-0 w-full bg-black/80 text-white z-50 px-6 py-4 space-y-4">
     {navItems.map((item, index) => (
       <div key={index}>
         {item.submenu ? (
           <details>
-            <summary className="cursor-pointer text-lg font-medium">
-              {item.label}
-            </summary>
+            <summary className="cursor-pointer text-lg font-medium">{item.label}</summary>
             <ul className="ml-4 mt-2 space-y-1">
               {item.submenu.map((sub, idx) => (
                 <li key={idx} className="hover:text-yellow-300">
@@ -98,17 +91,13 @@ const MobileMenu: React.FC<{ navItems: NavItem[]; onClose: () => void }> = ({
             </ul>
           </details>
         ) : (
-          <Link href={item.link || "#"}
-            className="block text-lg font-medium hover:text-yellow-300"
-          >
+          <Link href={item.link || "#"} className="block text-lg font-medium hover:text-yellow-300">
             {item.label}
           </Link>
         )}
       </div>
     ))}
-    <button className="bg-yellow-400 text-black px-4 py-2 rounded-full w-full cursor-pointer">
-      Get In Touch
-    </button>
+    <button className="bg-white text-black px-4 py-2 rounded-full w-full cursor-pointer">Submit Listing</button>
   </div>
 );
 
@@ -119,35 +108,25 @@ const Header: React.FC = () => {
     <header className="relative w-full bg-transparent z-50">
       <nav className="relative z-10 flex justify-between items-center px-6 py-4">
         <div className="text-white font-bold text-xl flex items-center gap-2">
-        <h1>BOXCARS</h1>
+          <h1>BOXCARS</h1>
         </div>
 
         <ul className="hidden md:flex items-center space-x-6 text-white font-medium">
           {navItems.map((item, index) => (
             <NavItemComponent key={index} item={item} />
           ))}
+          <div className="hidden md:flex items-center gap-4">
+            <div className="text-white text-sm"></div>
+            <button className="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-300">Submit Listing</button>
+          </div>
         </ul>
 
-        <div className="hidden md:flex items-center gap-4">
-          <div className="text-white text-sm">
-            
-          </div>
-          <button className="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-300">
-            Submit Listing
-          </button>
-        </div>
-
-        <button
-          className="md:hidden text-white text-2xl"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
+        <button className="md:hidden text-white text-2xl" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <FaXmark /> : <FaBars />}
         </button>
       </nav>
 
-      {mobileMenuOpen && (
-        <MobileMenu navItems={navItems} onClose={() => setMobileMenuOpen(false)} />
-      )}
+      {mobileMenuOpen && <MobileMenu navItems={navItems} onClose={() => setMobileMenuOpen(false)} />}
     </header>
   );
 };
