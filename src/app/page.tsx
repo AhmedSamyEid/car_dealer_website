@@ -1,6 +1,7 @@
 import FindYourPerfectCar from "./findYourPerfectCar/HeroSection";
 import { Statistics } from "./components/header/statistics/Statistics";
 import { WhyChooseUs } from "./components/header/whychooseus/WhyChooseUs";
+import { PopularMakes } from "./components/header/popularmakes/PopularMakes";
 import { BrandsSection } from "./components/header/brandsSection/BrandsSection";
 import { VehiclesSlider } from "./components/header/vehiclesslider/VehiclesSlider ";
 import { SellYourCarSection } from "./components/header/sellYourcarsection/SellYourCarSection";
@@ -13,6 +14,8 @@ export default function Home() {
       <SellYourCarSection />
       <Statistics />
       <WhyChooseUs />
+      <PopularMakes />
+      
     </>
   );
 }
