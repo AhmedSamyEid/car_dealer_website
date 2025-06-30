@@ -1,13 +1,13 @@
 import FindYourPerfectCar from "./findYourPerfectCar/HeroSection";
-import { Testimonials } from "./components/Testimonials/Testimonials";
-import { Statistics } from "./components/header/statistics/Statistics";
-import { WhyChooseUs } from "./components/header/whychooseus/WhyChooseUs";
-import { PopularMakes } from "./components/header/popularmakes/PopularMakes";
-import { LatestBlogPosts } from "./components/latestblogposts/LatestBlogPosts";
-import { BrandsSection } from "./components/header/brandsSection/BrandsSection";
-import { VehiclesSlider } from "./components/header/vehiclesslider/VehiclesSlider ";
-import { ShopByCategory } from "./components/header/ShopByCategory/ShopByCategory";
-import { SellYourCarSection } from "./components/header/sellYourcarsection/SellYourCarSection";
+import { Testimonials } from "./components/ui/Testimonials";
+import { Statistics } from "./components/ui/Statistics";
+import { WhyChooseUs } from "./components/ui/WhyChooseUs";
+import { PopularMakes } from "./components/ui/PopularMakes";
+import { LatestBlogPosts } from "./components/ui/LatestBlogPosts";
+import { BrandsSection } from "./components/ui/BrandsSection";
+import { VehiclesSlider } from "./components/ui/VehiclesSlider ";
+import { ShopByCategory } from "./components/ui/ShopByCategory";
+import { SellYourCarSection } from "./components/ui/SellYourCarSection";
 export default function Home() {
   return (
     <>
