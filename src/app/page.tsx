@@ -1,4 +1,4 @@
-import FindYourPerfectCar from "./findYourPerfectCar/HeroSection";
+import FindYourPerfectCar from "./components/ui/HeroSection";
 import { Testimonials } from "./components/ui/Testimonials";
 import { Statistics } from "./components/ui/Statistics";
 import { WhyChooseUs } from "./components/ui/WhyChooseUs";
