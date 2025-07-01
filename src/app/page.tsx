@@ -13,7 +13,8 @@ import { SellYourCarSection } from "./components/ui/SellYourCarSection";
 export default function Home() {
   return (
     <>
-      <FindYourPerfectCar />
+    <div>
+        <FindYourPerfectCar />
       <BrandsSection />
       <VehiclesSlider />
       <SellYourCarSection />
@@ -24,6 +25,8 @@ export default function Home() {
       <Testimonials />
       <LatestBlogPosts />
       <CallToActions />
+    </div>
+    
     </>
   );
 }
