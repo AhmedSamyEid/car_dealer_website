@@ -1,3 +1,4 @@
+"use client";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 

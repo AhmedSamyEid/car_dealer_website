@@ -1,3 +1,4 @@
+"use client";
 import { FaCar, FaDollarSign } from "react-icons/fa";
 
 export function CallToActions() {

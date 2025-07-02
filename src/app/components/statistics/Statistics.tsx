@@ -1,3 +1,4 @@
+"use client";
 export function Statistics() {
   const stats = [
     { label: "83M", desc: "CARS FOR SALE" },

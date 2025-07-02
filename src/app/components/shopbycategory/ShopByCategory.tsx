@@ -1,3 +1,4 @@
+"use client";
 export function ShopByCategory() {
   const categories = [
     "Ford Cars", "Toyota Cars", "Hyundai Cars", "Jeep Cars", "Kia Cars", "Chevrolet Cars",

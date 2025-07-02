@@ -1,3 +1,4 @@
+"use client";
 import { FaCheckCircle, FaHandshake, FaShieldAlt, FaStar } from "react-icons/fa";
 
 export function WhyChooseUs() {
