@@ -1,20 +1,20 @@
 
-import { Statistics } from "./components/ui/Statistics";
-import { WhyChooseUs } from "./components/ui/WhyChooseUs";
-import { PopularMakes } from "./components/ui/PopularMakes";
-import { Testimonials } from "./components/ui/Testimonials";
-import { CallToActions } from "./components/ui/CallToActions";
-import { BrandsSection } from "./components/ui/BrandsSection";
-import { VehiclesSlider } from "./components/ui/VehiclesSlider ";
-import { ShopByCategory } from "./components/ui/ShopByCategory";
-import { LatestBlogPosts } from "./components/ui/LatestBlogPosts";
+import { Statistics } from "./components/ui/statistics/Statistics";
+import { WhyChooseUs } from "./components/ui/whychooseus/WhyChooseUs";
+import { PopularMakes } from "./components/ui/popularmakes/PopularMakes";
+import { Testimonials } from "./components/ui/testimonials/Testimonials";
+import { CallToActions } from "./components/ui/callToactions/CallToActions";
+import { BrandsSection } from "./components/ui/brandssection/BrandsSection";
+import { VehiclesSlider } from "./components/ui/vehiclesslider/VehiclesSlider ";
+import { ShopByCategory } from "./components/ui/shopbycategory/ShopByCategory";
+import { LatestBlogPosts } from "./components/ui/latestblogposts/LatestBlogPosts";
 import FindYourPerfectCar from "./findYourPerfectCar/HeroSection";
-import { SellYourCarSection } from "./components/ui/SellYourCarSection";
+import { SellYourCarSection } from "./components/ui/sellyourcarsection/SellYourCarSection";
 export default function Home() {
   return (
     <>
     <div>
-        <FindYourPerfectCar />
+      <FindYourPerfectCar />
       <BrandsSection />
       <VehiclesSlider />
       <SellYourCarSection />
