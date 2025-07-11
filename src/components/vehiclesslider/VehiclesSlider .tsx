@@ -36,7 +36,7 @@ const vehicles = [
   },
   {
     name: "Ford Mustang",
-    image: "/image/car1-660x440.jpg.png",
+    image: "/image/Figure → Link (1).png",
     price: "$45,000",
     year: "2021",
     mileage: "10,000 km",
