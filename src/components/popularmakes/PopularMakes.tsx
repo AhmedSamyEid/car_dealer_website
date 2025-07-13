@@ -18,7 +18,7 @@ const popularCars = [
   },
   {
     name: "BMW X5 - 2021",
-    image: "/image/Container (1).png",
+    image: "/image/Container2.png",
     price: "$103,000",
     mileage: "25,000 mi",
     location: "Texas, USA",
