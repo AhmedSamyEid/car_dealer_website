@@ -26,7 +26,7 @@ export default function HeroSection() {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-20">
         <p className="text-sm md:text-base text-gray-200 mb-2">Find cars for sale and for rent near you</p>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">Find Your Perfect Car</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">Fast, Simple and Easy</h1>
         <div className="bg-white/90 rounded-xl md:rounded-full py-4 px-4 flex justify-around flex-col md:flex-row gap-3 md:gap-4 items-center max-w-4xl w-full shadow-lg mb-8">
           <select className="text-sm text-black  px-4 py-2 w-full md:w-auto">
             <option>Any Make</option>

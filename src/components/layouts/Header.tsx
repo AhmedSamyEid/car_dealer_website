@@ -16,6 +16,7 @@ const navItems: NavItem[] = [
     submenu: [
       { name: "Home 2", path: "/home2" },
       { name: "Home 3", path: "/home3" },
+      { name: "Home 4", path: "/home4" },
     ],
   },
   {
