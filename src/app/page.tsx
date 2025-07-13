@@ -9,6 +9,7 @@ import { ShopByCategory } from "@/components/shopbycategory/ShopByCategory";
 import { LatestBlogPosts } from "@/components/latestblogposts/LatestBlogPosts";
 import FindYourPerfectCar from "@/components/findYourPerfectCar/HeroSection";
 import { SellYourCarSection } from "@/components/sellyourcarsection/SellYourCarSection";
+
 export default function Home() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function Home() {
         <Testimonials />
         <LatestBlogPosts />
         <CallToActions />
+        
       </div>
     </>
   );

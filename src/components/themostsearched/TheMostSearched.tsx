@@ -49,7 +49,7 @@ export default function TheMostSearchedCars() {
     },
     {
       name: "C-Class – 2023",
-      image: "/image/Link11.png",
+      image: "/image/Link1100.png",
       price: "$18,000",
       year: "2023",
       mileage: "15,000 km",
@@ -65,7 +65,7 @@ export default function TheMostSearchedCars() {
     },
     {
       name: "New GLC – 2023",
-      image: "/image/Link (27).png",
+      image: "/image/Link.png",
       price: "$$95,000",
       year: "2023",
       mileage: "10,000 km",

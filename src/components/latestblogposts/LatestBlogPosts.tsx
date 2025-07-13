@@ -4,7 +4,7 @@ import Image from "next/image";
 const popularCars = [
   {
     name: "admin - November 22, 2023",
-    image: "/image/Container7.png",
+    image: "/image/Figure.png",
     location: "2024 BMW ALPINA XB7 with exclusive details,extraordinary",
   },
   {
@@ -25,7 +25,7 @@ export function LatestBlogPosts() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-semibold">Latest Blog Posts</h2>
-          <button className="text-sm text-white/60 hover:underline">View All</button>
+          <button className="text-sm text-black/60 hover:underline ">View All</button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

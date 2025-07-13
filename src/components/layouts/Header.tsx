@@ -108,7 +108,9 @@ const Header: React.FC = () => {
     <header className="relative w-full bg-transparent z-50">
       <nav className="relative z-10 flex justify-between items-center px-6 py-4">
         <div className="text-white font-bold text-xl flex items-center gap-2">
-          <h1>BOXCARS</h1>
+          <Link href={"/"}>
+            <h1>BOXCARS</h1>
+          </Link>
         </div>
 
         <ul className="hidden md:flex items-center space-x-6 text-white font-medium">
