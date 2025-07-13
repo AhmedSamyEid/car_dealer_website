@@ -1,5 +1,5 @@
 import { Statistics } from "@/components/statistics/Statistics";
-import { WhyChooseUs } from "@/components/whychooseus/WhyChooseUs";
+import { WhyChooseUs } from "@/components/why_choose_us/WhyChooseUs";
 import { PopularMakes } from "@/components/popularmakes/PopularMakes";
 import { Testimonials } from "@/components/testimonials/Testimonials";
 import { CallToActions } from "@/components/callToactions/CallToActions";
