@@ -5,6 +5,8 @@ import { PopularMakes } from "@/components/popularmakes/PopularMakes";
 import { ShopByCategory } from "@/components/shopbycategory/ShopByCategory";
 import { BrandsSection } from "@/components/brandssection/BrandsSection";
 import AutoLoanCalculator from "@/components/auto_loan_calculator/Autooanalculator";
+import OurTeam from "@/components/Our_Team/Ourteam";
+
 
 export default function home() {
   return (
@@ -16,6 +18,7 @@ export default function home() {
       <ShopByCategory />
       <BrandsSection />
       <AutoLoanCalculator />
+      <OurTeam />
     </div>
   );
 }
