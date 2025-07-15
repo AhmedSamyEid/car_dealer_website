@@ -22,6 +22,7 @@ export default function OurTeam() {
           </div>
         ))}
       </div>
+      <Image src="/image/Background(55).png"  alt="Background" width={900} height={200} className="w-full py-7 "/>
     </div>
   );
 }
