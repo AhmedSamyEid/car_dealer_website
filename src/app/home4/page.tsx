@@ -6,6 +6,7 @@ import { ShopByCategory } from "@/components/shopbycategory/ShopByCategory";
 import { BrandsSection } from "@/components/brandssection/BrandsSection";
 import AutoLoanCalculator from "@/components/auto_loan_calculator/Autooanalculator";
 import OurTeam from "@/components/Our_Team/Ourteam";
+import { LatestBlogPosts } from "@/components/latestblogposts/LatestBlogPosts";
 
 
 export default function home() {
@@ -19,6 +20,7 @@ export default function home() {
       <BrandsSection />
       <AutoLoanCalculator />
       <OurTeam />
+      <LatestBlogPosts/>
     </div>
   );
 }
