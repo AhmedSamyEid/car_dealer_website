@@ -1,3 +1,4 @@
+import OurTeam from "@/components/Our_team_mercedes/Ourteam";
 import HeroSection from "@/components/mercedes_benz/HeroSection";
 import { WhyChooseUs } from "@/components/why_choose_us/WhyChooseUs";
 import Onlineinperson from "@/components/online_in_person/Onlineperson";
@@ -11,6 +12,7 @@ export default function home5() {
       <Onlineinperson />
       <WhyChooseUs />
       <VehiclesSlider />
+      <OurTeam />
     </div>
   );
 }
