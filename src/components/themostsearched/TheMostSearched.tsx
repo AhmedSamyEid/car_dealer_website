@@ -99,7 +99,8 @@ export default function TheMostSearchedCars() {
         <h2 className="text-2xl font-bold text-center mb-8">The Most Searched Cars</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {cars.map((car, i) => (
-            <div key={i} className="bg-[#0A0A23]  shadow-md rounded-lg overflow-hidden">
+            <div key={i} className="bg-[#0A0A23]  shadow-md rounded-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110
+">
               <Image src={car.image} alt={car.name} width={400} height={250} className="w-full object-cover" />
               <div className="p-4">
                 <h3 className="font-semibold text-white text-lg mb-1">{car.name}</h3>
@@ -131,7 +132,8 @@ export default function TheMostSearchedCars() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {car.map((car, i) => (
             <div key={i} className="bg-white shadow-md rounded-lg overflow-hidden">
-              <Image src={car.image} alt={car.name} width={400} height={250} className="w-full object-cover" />
+              <Image src={car.image} alt={car.name} width={400} height={250} className="w-full object-cover transition-transform duration-300 ease-in-out hover:scale-110
+" />
               <div className="p-4">
                 <h3 className="font-semibold text-lg mb-1">{car.name}</h3>
                 <p className="text-sm text-gray-500 mb-1">

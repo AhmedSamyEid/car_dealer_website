@@ -54,7 +54,7 @@ export function VehiclesSlider() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
           {vehicles.map((car, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110">
               <Image
                 src={car.image}
                 alt={car.name}

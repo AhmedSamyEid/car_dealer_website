@@ -1,13 +1,20 @@
 "use client";
 import { useEffect } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 export default function SignUp() {
   const handleSignUp = () => {
     const emailInput = document.getElementById("email") as HTMLInputElement;
     const email = emailInput.value;
-    localStorage.setItem("email", email);
 
-    emailInput.value = "";
+   
+    if(email){
+      localStorage.setItem("email", email)
+      toast.success("✅ Email saved successfully!");
+       emailInput.value = "";
+    }else{
+      toast.error("❌ Please enter a valid email.");
+    }
   };
 
   useEffect(() => {
@@ -18,6 +25,7 @@ export default function SignUp() {
 
   return (
     <div className="flex justify-center bg-white py-12">
+        <ToastContainer position="top-center" autoClose={3000} />
       <div className="text-center max-w-md">
         <h3 className="text-3xl mb-4">Join BoxCar</h3>
         <p className="text-gray-600 mb-6">Receive pricing updates, shopping tips & more!</p>

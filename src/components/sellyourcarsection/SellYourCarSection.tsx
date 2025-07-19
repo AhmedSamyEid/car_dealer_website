@@ -5,7 +5,7 @@ export function SellYourCarSection() {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-        <div className="relative w-full h-72 md:h-96">
+        <div className="relative w-full h-72 md:h-96 ">
           <Image src="/image/Background.png" alt="Sell Car" fill className="object-cover rounded-lg" />
         </div>
         <div>

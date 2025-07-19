@@ -37,7 +37,8 @@ export function PopularMakes() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {popularCars.map((car, index) => (
             <div key={index} className="bg-[#1C1C3A] rounded-lg overflow-hidden">
-              <Image src={car.image} alt={car.name} width={400} height={250} className="w-full object-cover" />
+              <Image src={car.image} alt={car.name} width={400} height={250} className="w-full object-cover transition-transform duration-300 ease-in-out hover:scale-115
+" />
               <div className="p-4">
                 <h3 className="font-semibold text-lg mb-2">{car.name}</h3>
                 <p className="text-sm text-white/70 mb-1">{car.mileage}</p>

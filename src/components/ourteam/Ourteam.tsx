@@ -34,7 +34,8 @@ export default function Ourteam() {
         <div key={i} className="flex flex-col items-center shadow-lg rounded-lg p-4 w-[240px]">
           <h3 className="text-lg font-semibold mt-2">{user.name}</h3>
           <p className="text-sm text-gray-600">{user.Job}</p>
-          <Image src={user.image} alt={user.name} width={250} height={250} className="rounded-md object-cover" />
+          <Image src={user.image} alt={user.name} width={250} height={250} className="rounded-md object-cover transition-transform duration-300 ease-in-out hover:scale-115
+" />
         </div>
       ))}
     </div>

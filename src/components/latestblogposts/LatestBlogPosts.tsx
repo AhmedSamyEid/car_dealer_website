@@ -30,7 +30,10 @@ export function LatestBlogPosts() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {popularCars.map((car, index) => (
-            <div key={index} className="bg-white rounded-lg overflow-hidden">
+            <div
+              key={index}
+              className="bg-white rounded-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110"
+            >
               <Image src={car.image} alt={car.name} width={400} height={250} className="w-full object-cover" />
               <div className="p-4">
                 <h3 className="font-semibold text-lg mb-2">{car.name}</h3>

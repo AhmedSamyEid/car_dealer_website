@@ -15,7 +15,7 @@ export default function OurTeam() {
       <h2 className="text-3xl font-bold mb-6 text-center">Our Team</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
         {users.map((user, i) => (
-          <div key={i} className="flex flex-col items-center text-center space-y-3">
+          <div key={i} className="flex flex-col items-center text-center space-y-3 transition-transform duration-300 ease-in-out hover:scale-110">
             <Image src={user.imag} alt={user.alt} width={220} height={200} className=" object-cover shadow-md" />
             <h3 className="font-semibold text-lg">{user.name}</h3>
             <p className="text-sm text-gray-500">{user.dec}</p>
