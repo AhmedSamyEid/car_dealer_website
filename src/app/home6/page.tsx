@@ -3,6 +3,7 @@ import { Browsebytype } from "@/components/browseby_type/Browsebytype";
 import { VehiclesSlider } from "@/components/vehiclesslider/VehiclesSlider ";
 import Vehiclesavailable from "@/components/vehicles _available/Vehiclesavailable";
 import GetFairPrice from "@/components/get_fair_price/Getfairprice";
+import { Statistics } from "@/components/statistics/Statistics";
 
 export default function home() {
   return (
@@ -12,6 +13,7 @@ export default function home() {
       <WhyChooseUs />
       <VehiclesSlider />
       <GetFairPrice />
+      <Statistics />
     </div>
   );
 }
