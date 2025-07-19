@@ -21,8 +21,8 @@ export default function HeroSection() {
     <div className="relative min-h-screen text-white overflow-hidden bottom-17">
       <Image src={selectedBackground} alt="Background" fill className="object-cover z-0" priority />
 
-      <div className="relative z-20 max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between items-center">
-        <div className="bg-white text-black mt-25 rounded-xl p-6 w-full max-w-md shadow-lg z-20">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between items-center ">
+        <div className="bg-white text-black mt-25 rounded-xl p-6 w-full max-w-md shadow-lg z-20 ">
           <div className="flex justify-between mb-4">
             <button onClick={() => setSelectedTab("new")} className={classNames("px-4 py-2 rounded-md font-medium", selectedTab === "new" ? "bg-black text-white" : "bg-gray-200")}>
               New
@@ -33,14 +33,14 @@ export default function HeroSection() {
           </div>
 
           <div className="space-y-4">
-            <select className="w-full border border-gray-300 px-4 py-2 rounded-md">
+            <select className="w-full border border-gray-300 px-4 py-2 rounded-md cursor-pointer">
               <option>Select Make</option>
               <option>Audi</option>
               <option>BMW</option>
               <option>Toyota</option>
             </select>
 
-            <select className="w-full border border-gray-300 px-4 py-2 rounded-md" value={model} onChange={(e) => setModel(e.target.value)}>
+            <select className="w-full border  border-gray-300 px-4 py-2 rounded-md" value={model} onChange={(e) => setModel(e.target.value)}>
               <option value="">Select Model</option>
               <option value="A4">A4</option>
               <option value="X5">X5</option>
@@ -48,8 +48,8 @@ export default function HeroSection() {
             </select>
 
             <div>
-              <label className="block mb-1 text-sm text-gray-700">Select Price</label>
-              <input type="range" min="0" max="100000" value={price} onChange={(e) => setPrice(parseInt(e.target.value))} className="w-full" />
+              <label className="block  mb-1 text-sm text-gray-700">Select Price</label>
+              <input type="range" min="0" max="100000" value={price} onChange={(e) => setPrice(parseInt(e.target.value))} className="w-full cursor-pointer" />
               <div className="flex justify-between text-sm text-gray-600">
                 <span>$0</span>
                 <span>${price.toLocaleString()}</span>
@@ -57,7 +57,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <button className="w-full bg-[#405FF2] text-white py-2 rounded-md hover:bg-[#324ed6]">Search</button>
+            <button className="w-full cursor-pointer bg-[#405FF2] text-white py-2 rounded-md hover:bg-[#324ed6]">Search</button>
           </div>
         </div>
 
