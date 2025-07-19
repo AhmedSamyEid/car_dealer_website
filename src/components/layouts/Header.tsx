@@ -18,6 +18,7 @@ const navItems: NavItem[] = [
       { name: "Home 3", path: "/home3" },
       { name: "Home 4", path: "/home4" },
       { name: "Home 5", path: "/home5" },
+      { name: "Home 6", path: "/home6" },
     ],
   },
   {
