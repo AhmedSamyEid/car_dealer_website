@@ -18,6 +18,7 @@ export default function GetFairPrice() {
           <li>You get 24/7 roadside assistance</li>
           <li>We fix 4 out of 5 cars at the roadside</li>
         </ul>
+        <button className="p-3 mt-4 bg-[#405FF2] w-40 rounded-md text-white cursor-pointer">Get Started</button>
       </div>
     </div>
   );

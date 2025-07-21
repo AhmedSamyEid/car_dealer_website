@@ -5,7 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function SignUp() {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState<string>("");
   const handleSignUp = () => {
     if (!email.trim()) {
       toast.error("❌ Please enter a valid email.");
@@ -13,14 +13,14 @@ export default function SignUp() {
     }
 
     try {
-      const existingEmails = JSON.parse(localStorage.getItem("subscribedEmails") || "[]");
+      const existingEmails: string[]  = JSON.parse(localStorage.getItem("subscribedEmails") || "[]");
 
       if (existingEmails.includes(email)) {
         toast.warning("⚠️ This email is already subscribed.");
         return;
       }
 
-      const updatedEmails = [...existingEmails, email];
+      const updatedEmails: string[]  = [...existingEmails, email];
       localStorage.setItem("subscribedEmails", JSON.stringify(updatedEmails));
 
       toast.success("✅ Successfully subscribed!");
@@ -28,6 +28,7 @@ export default function SignUp() {
     } catch (error) {
       toast.error("❌ Something went wrong.");
     }
+    
   };
 
   return (
