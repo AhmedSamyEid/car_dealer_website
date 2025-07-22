@@ -26,7 +26,8 @@ export default function SubscribeToOurMailing() {
 
       toast.success("✅ Successfully subscribed!");
       setEmail("");
-    } catch (error) {
+    } catch (error:unknown) {
+      if(error instanceof Error)
       toast.error("❌ Something went wrong.");
     }
   };
