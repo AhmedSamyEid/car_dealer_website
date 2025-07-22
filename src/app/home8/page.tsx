@@ -5,6 +5,7 @@ import { WhyChooseUs } from "@/components/why_choose_us/WhyChooseUs";
 import Areyoulooking from "@/components/are_you_looking/Areyoulooking";
 import HeroSection from "@/components/search_less_live_more/HeroSection";
 import TheMostSearchedCars from "@/components/themostsearched/TheMostSearched";
+import { LatestBlogPosts } from "@/components/latestblogposts/LatestBlogPosts";
 
 export default function home () {
   return(
@@ -16,6 +17,7 @@ export default function home () {
       <TheMostSearchedCars />
       <WhyChooseUs />
       <OurTeam />
+      <LatestBlogPosts />
     </div>
   )
 }
