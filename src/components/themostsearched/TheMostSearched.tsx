@@ -91,7 +91,7 @@ export default function TheMostSearchedCars() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-center mb-8">The Most Searched Cars</h2>
+        <h2 className="text-2xl font-bold text-center mb-8">Explore All Vehicles</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {cars.map((car, i) => (
             <div key={i} className="bg-white  shadow-md rounded-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110

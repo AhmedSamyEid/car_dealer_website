@@ -11,7 +11,6 @@ export default function SignUp() {
       toast.error("❌ Please enter a valid email.");
       return;
     }
-
     try {
       const existingEmails: string[]  = JSON.parse(localStorage.getItem("subscribedEmails") || "[]");
 
